@@ -48,8 +48,9 @@ I enjoy learning by doing and continuously improving my skills through hands-on 
 
 ## 📄 Resume
 
-📎 My resume is available here:  
-assets/FinalYearBCA_AmithDongre.pdf
+📎 My resume is available here:
+
+`assets/FinalYearBCA_AmithDongre.pdf`
 
 ---
 
