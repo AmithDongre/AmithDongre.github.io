@@ -284,6 +284,19 @@ header {
     color: #38bdf8;
 }
 
+.btn.download {
+    border: 1.5px solid rgba(255,255,255,0.15);
+    color: #94a3b8;
+    padding: 12px 18px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn.download:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
 /* Hero stats */
 .hero-stats {
     display: flex;
@@ -809,6 +822,8 @@ body.light .stat-label { color: #94a3b8; }
 body.light .stat-divider { background: rgba(0,0,0,0.1); }
 body.light .hero-stats { border-top-color: rgba(0,0,0,0.08); }
 body.light .btn.secondary { border-color: #0284c7; color: #0284c7; }
+body.light .btn.download { border-color: rgba(0,0,0,0.15); color: #64748b; }
+body.light .btn.download:hover { border-color: #0284c7; color: #0284c7; }
 body.light .about-section, body.light .contact-section { background: #f8fafc; }
 body.light .projects-section { background: #ffffff; color: #020617; }
 body.light .project-featured { background: #f1f5f9; border-color: rgba(2,132,199,0.2); }
