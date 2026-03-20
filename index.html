@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <title>Amith Dongre | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <!-- ===== NAVBAR ===== -->
 <header>
     <div class="container nav">
         <div class="logo">Amith</div>
-
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -24,7 +23,6 @@
             <li><a href="#experience">Journey</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
         <button id="themeToggle" class="theme-btn">🌙</button>
         <div class="hamburger" id="hamburger">☰</div>
     </div>
@@ -32,21 +30,48 @@
 
 <!-- ===== HERO ===== -->
 <section id="home" class="hero">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
     <div class="container hero-content">
+
+        <div class="hero-avatar">AD</div>
+        <div class="hero-label">👋 Available for internships</div>
+
         <h1>
-            Hi, I’m <span>Amith Dongre</span><br>
-            <strong>Web Developer & Python Enthusiast</strong>
+            Hi, I'm <span>Amith Dongre</span><br>
+            <strong id="typingText"></strong><span class="cursor">|</span>
         </h1>
 
         <p>
-            I build clean, responsive web interfaces and enjoy solving
-            problems using Python through practical, real-world projects.
+            I build real products — clean, functional, and designed to hold up
+            under real conditions. Currently exploring the intersection of
+            web development and AI-assisted building.
         </p>
 
         <div class="hero-buttons">
             <a href="#projects" class="btn primary">View Projects</a>
-            <a href="assets/FinalYearBCA_AmithDongre.pdf" class="btn secondary">View Resume</a>
+            <a href="assets/resume.pdf" class="btn secondary" download>Download Resume</a>
         </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Tech Stacks</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Live Competition</span>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -57,13 +82,17 @@
         <div class="about-text">
             <h2>About Me</h2>
             <p>
-                I’m a passionate web developer with a strong interest in Python programming.
-                I enjoy building clean, user-friendly web applications and using Python
-                to create logical, backend-driven, and problem-solving projects.
-                I continuously work on improving both my frontend and Python skills
-                through hands-on projects.
+                I'm a final-year BCA student at Alva's College, Moodbidri,
+                who builds real things and thinks carefully about how they
+                should work. I care about whether something is fair, whether
+                it holds up under edge cases, and whether it actually solves
+                the problem it was designed to solve.
             </p>
-
+            <p style="margin-top: 14px;">
+                I work with HTML, CSS, JavaScript, Python, Flask, and Firebase.
+                I also work effectively with AI tools — not just as a shortcut,
+                but as a way to build faster without thinking less.
+            </p>
         </div>
 
         <div class="skills-group">
@@ -74,18 +103,18 @@
                 <span>JavaScript</span>
                 <span>Responsive Design</span>
             </div>
-
             <h4>Python & Backend</h4>
             <div class="skills-list">
                 <span>Python</span>
                 <span>Flask</span>
-                <span>Basic Backend Logic</span>
+                <span>Firebase</span>
             </div>
-
-            <h4>Tools</h4>
+            <h4>Tools & Platforms</h4>
             <div class="skills-list">
                 <span>Git</span>
                 <span>GitHub</span>
+                <span>Vercel</span>
+                <span>Prompt Engineering</span>
             </div>
         </div>
 
@@ -95,82 +124,83 @@
 <!-- ===== PROJECTS ===== -->
 <section id="projects" class="projects-section reveal">
     <div class="container">
-
         <h2 class="section-title">Selected Projects</h2>
 
         <div class="projects-layout">
 
-            <!-- FEATURED PROJECT -->
             <div class="project-featured">
-                <h3>🌦️ Weather Forecast App</h3>
+                <div class="featured-badge">⭐ Featured Project</div>
+                <h3>🔐 CipherQuest: The IT Odyssey</h3>
                 <p>
-                    <strong>Problem:</strong> Users need quick access to accurate
-                    weather information.<br><br>
-
-                    <strong>Solution:</strong> Built a modern, responsive weather
-                    application that displays real-time data and a 5-day forecast
-                    using the OpenWeather API.
+                    <strong>Problem:</strong> Design a fair, competitive quiz game
+                    for a live inter-college IT fest where multiple teams play
+                    simultaneously across different difficulty modes.<br><br>
+                    <strong>Solution:</strong> Built a full-stack browser-based quiz
+                    game with a 90-question bank across four themed worlds — Binary
+                    Jungle, Network Nebula, Code Citadel, and AI Realm. Features a
+                    Firebase real-time leaderboard, three difficulty modes with
+                    mathematically equal max scores (315 pts), hint deductions,
+                    wrong-answer cooldowns, boss questions, and a live host dashboard.
+                    Deployed and used at Techotsav, Alva's College.<br><br>
+                    <strong>Built entirely through structured prompt engineering with Claude.</strong>
                 </p>
-
                 <div class="tags">
+                    <span>JavaScript</span>
+                    <span>Firebase</span>
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>API</span>
+                    <span>Vercel</span>
+                    <span>Prompt Engineering</span>
                 </div>
-
-                <div class="project-links">
-                    <a href="https://amithdongre.github.io/Weather-app/" target="_blank">
-                        Live Demo →
-                    </a>
-                    <a href="https://github.com/AmithDongre/weather-app" target="_blank">
-                        GitHub →
-                    </a>
+                <div class="project-links featured-links">
+                    <a href="https://cipherquest-game.vercel.app" target="_blank" class="link-demo">🔗 Live Demo →</a>
+                    <a href="https://github.com/AmithDongre/cipherquest-game" target="_blank" class="link-github">💻 GitHub →</a>
                 </div>
             </div>
 
-            <!-- SIDE PROJECTS -->
             <div class="project-list">
 
                 <div class="project-item">
+                    <h4>🌦️ Weather Forecast App</h4>
+                    <p>Real-time weather data and 5-day forecast using the OpenWeather API.</p>
+                    <div class="tags tags-small">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://amithdongre.github.io/Weather-app/" target="_blank">Live Demo →</a>
+                        <a href="https://github.com/AmithDongre/weather-app" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h4>🎲 Number Guessing Game</h4>
+                    <p>Python backend game with Flask, deployed on Render.</p>
+                    <div class="tags tags-small">
+                        <span>Python</span><span>Flask</span><span>Render</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://number-guess-game-kodl.onrender.com" target="_blank">Live Demo →</a>
+                        <a href="https://github.com/AmithDongre/Number-guess-game" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
                     <h4>🎓 Classroom Monitoring System</h4>
-                    <p>
-                        <strong>Focus:</strong> Backend logic, data handling,
-                        and classroom activity monitoring using Flask.
-                    </p>
-                    <!-- <a href="https://github.com/AmithDongre" target="_blank">
-                        GitHub →
-                    </a> -->
-                    <br>
-                    <p>Ongoing....</p>
+                    <p>Flask-based classroom tracking system with backend data handling. Currently in development.</p>
+                    <div class="tags tags-small">
+                        <span>Python</span><span>Flask</span><span class="tag-wip">In Progress</span>
+                    </div>
                 </div>
 
                 <div class="project-item">
                     <h4>🛒 Amazon Clone</h4>
-                    <p>
-                        <strong>Focus:</strong> Responsive layout design and
-                        UI recreation using HTML and CSS.
-                    </p>
-                    <a href="https://amithdongre.github.io/amazon-clone/" target="_blank">
-                        Live Demo →
-                    </a>
-                    <a href="https://github.com/AmithDongre" target="_blank">
-                        GitHub →
-                    </a>
-                </div>
-
-                <div class="project-item">
-                    <h4>🎲 Number Guessing Game (Flask)</h4>
-                    <p>
-                        <strong>Focus:</strong> Python backend, Flask, deployment.
-                    </p>
+                    <p>Responsive UI recreation of Amazon's homepage focusing on layout design and CSS precision.</p>
+                    <div class="tags tags-small">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://number-guess-game-kodl.onrender.com" target="_blank">
-                            Live Demo →
-                        </a>
-                        <a href="https://github.com/AmithDongre/Number-guess-game" target="_blank">
-                            GitHub →
-                        </a>
+                        <a href="https://amithdongre.github.io/amazon-clone/" target="_blank">Live Demo →</a>
+                        <a href="https://github.com/AmithDongre/amazon-clone" target="_blank">GitHub →</a>
                     </div>
                 </div>
 
@@ -184,22 +214,41 @@
 <section id="experience" class="experience-section reveal">
     <div class="container">
         <h2 class="section-title">Experience & Journey</h2>
-
         <div class="timeline">
 
             <div class="timeline-item">
-                <span class="dot"></span>
+                <span class="dot dot-highlight"></span>
                 <div class="content">
-                    <h4>2025 — Classroom Monitoring System</h4>
-                    <p>Developing a Flask-based classroom tracking system.</p>
+                    <div class="timeline-year">2025</div>
+                    <h4>CipherQuest: The IT Odyssey</h4>
+                    <p>Designed and built a full-stack quiz game deployed live at Techotsav, the inter-college IT fest at Alva's College. Featured a 90-question bank, three difficulty modes with mathematically equal max scores, a Firebase real-time leaderboard, custom sound system, and a host dashboard — built entirely through structured prompt engineering.</p>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <span class="dot"></span>
                 <div class="content">
-                    <h4>2024 — Web Development Foundations</h4>
-                    <p>Learned HTML, CSS, JavaScript and built responsive projects.</p>
+                    <div class="timeline-year">2025</div>
+                    <h4>Classroom Monitoring System</h4>
+                    <p>Developing a Flask-based classroom tracking system with backend data handling and activity monitoring.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="content">
+                    <div class="timeline-year">2024</div>
+                    <h4>Web Development Foundations</h4>
+                    <p>Built responsive web projects using HTML, CSS, and JavaScript. Integrated REST APIs and deployed to GitHub Pages.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="content">
+                    <div class="timeline-year">2023</div>
+                    <h4>Started BCA at Alva's College</h4>
+                    <p>Began Bachelor of Computer Applications. Started learning programming fundamentals, Python, and web technologies.</p>
                 </div>
             </div>
 
@@ -209,33 +258,36 @@
 
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="contact-section reveal">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Email: dongreamith@gmail.com</p>
-        <p>
-            GitHub:
-            <a href="https://github.com/AmithDongre" target="_blank">
-                github.com/AmithDongre
-            </a>
+    <div class="container contact-inner">
+        <h2>Let's Connect</h2>
+        <p class="contact-intro">
+            Open to internship and entry-level opportunities in web development,
+            product, or AI. Feel free to reach out directly.
         </p>
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/amith-dongre" target="_blank">
-                linkedin.com/in/amith-dongre
+        <div class="contact-cards">
+            <a href="mailto:dongreamith@gmail.com" class="contact-card">
+                <span class="contact-icon">📧</span>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">dongreamith@gmail.com</span>
             </a>
-        </p>
+            <a href="https://github.com/AmithDongre" target="_blank" class="contact-card">
+                <span class="contact-icon">💻</span>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">AmithDongre</span>
+            </a>
+            <a href="https://www.linkedin.com/in/amith-dongre" target="_blank" class="contact-card">
+                <span class="contact-icon">🔗</span>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">amith-dongre</span>
+            </a>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 Amith Dongre</p>
+    <p>&copy; 2026 Amith Dongre &middot; Built with care</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
